@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Flask Website </title>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="homepage.css") }}"/>
+</head>
+
+<body>
+
+    <form class="banner" method="post" action=" {{ url_for('.signup') }}">
+      <input type="email" name="email" class="textbox" placeholder=" Email" required>
+      <button type="submit" class="submit"> &#9654; </button>
+    </form>
+
+    <h1> This website was made using: </h1>
+
+    <section class="container">
+
+      <div class="item flask">
+      <!-- Started learning the Python-based microframework using the PyCharm IDE -->
+
+        Python (Flask)
+      </div>
+
+      <div class="item html">
+      <!-- Codecademy was awesome for learning the basics of HTML5 -->
+        HTML5
+      </div>
+
+      <div class="item css">
+      <!-- Extremely frustrating to work with, but equally satisfying when it did -->
+        CSS3
+      </div>
+    </section>
+</body>

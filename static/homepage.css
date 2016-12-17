@@ -1,0 +1,96 @@
+body {
+    background: #2b2d2d;
+    color: #eaf1f2;
+    font-family: 'Anton', sans-serif;
+    font-variant: small-caps;
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: 0.01em;
+    font-family: 'Calibri', sans-serif;
+    font-variant: normal;
+    font-size: 0.6em;
+}
+
+.container {
+    height: 600px;
+}
+
+.item {
+    height: 300px;
+    width: 300px;
+    line-height: 300px;
+    border: 3px solid #f2f2f2;
+    border-radius: 150px;
+    box-shadow: 0 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    height: 50px;
+}
+
+.textbox {
+    width: 400px;
+    height: 10px;
+    padding: 5px;
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.textbox:focus {
+    outline: none;
+}
+
+.submit {
+    cursor: pointer;
+    background: transparent;
+    color: #f2f2f2;
+    height: 30px;
+    width: 30px;
+    line-height: 15px;
+    border-radius: 30px;
+    border: 2px solid #f2f2f2;
+    box-shadow: 0 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.item:nth-child(1) {
+    order: 2;
+}
+
+.item:nth-child(2) {
+    order: 1;
+}
+
+.item:nth-child(3) {
+    order: 3;
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+  }
+
+  .item {
+      position: relative;
+      margin: auto;
+  }
+
+  .flask {
+      bottom: 100px;
+  }
+
+  .html, .css {
+      top: 100px;
+  }
+}
