@@ -1,0 +1,11 @@
+application: test-flask-website
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: Flask-PyCharm.py
+- url: /static
+  static_dir: static
