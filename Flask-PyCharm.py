@@ -29,7 +29,9 @@ def signup():
     msg = Message("Hello",
                   sender=("Rohan", "rohanbansal33@gmail.com"),
                   recipients=[email])
-    msg.body = "Thanks for subscribing to #CatFacts!"
+    msg.body = 'Thanks for subscribing to #CatFacts!\n\n' \
+               'CatFact of the Day: The most popular pedigreed cat is the Persian cat, ' \
+               'followed by the Main Coon cat and the Siamese cat.'
     mail.send(msg)
     return render_template('confirmation.html', email=email)
 
