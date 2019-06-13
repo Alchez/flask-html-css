@@ -27,7 +27,7 @@ def index(name=None):
 def signup():
     email = request.form['email']
     msg = Message("Hello",
-                  sender=("Rohan", "rohanbansal33@gmail.com"),
+                  sender=("<sender>", "<sender_email>"),
                   recipients=[email])
     msg.body = 'Thanks for subscribing to #CatFacts!\n\n' \
                'CatFact of the Day: The most popular pedigreed cat is the Persian cat, ' \
